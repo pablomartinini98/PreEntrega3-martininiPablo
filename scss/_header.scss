@@ -1,0 +1,47 @@
+@import "estilo";
+
+/* header */
+header {
+    text-align: center;
+    border-style: groove;
+    background-color: #F2D7D5;
+    margin: 10px;
+    background-image: url(../img/fondo\ de\ lenceria.jpg);
+    background-size: cover;
+    height: 50%;
+
+}
+.navbar-nav {
+    text-align: center;
+}
+.nav-item {
+    margin: 0 15px;
+}
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    
+}
+.nav-link:hover {
+    color: #007bff;
+}
+.logo {
+    width: 150px;
+
+}
+.navbar-collapse {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

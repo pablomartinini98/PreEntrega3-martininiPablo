@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zara fran </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body class="container-fluid">
+    <header class="navbar navbar-expand-lg sticky-top">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logotipo.png" alt="logotipo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../paginas/catalogo.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="row div1">
+            <section class="packModificacion">
+                <h2 class="titulo"> Promociones</h2>
+                <div class="promos">
+                    <h3> Podes armar tus combos a tu gusto! </h3>
+                    <h5> Pack x3</h5>
+                    <p>En tus promociones x3 vas a tener la opcion de realizar en corpiños solamente o tangas o
+                        vedetinas ya sea el color que elijas y talle que quieras.
+                    </p>
+                    <h5>Pack x6</h5>
+                    <p>El pack x6 lo podes hacer de bikinis nada mas con la opcion de elegir las telas y obviamente los
+                        colores que quieras convinar.
+                    </p>
+                    <h5>Pack x12</h5>
+                    <p>El pack x12 te ofrecemos una oferta imperdible de 12 medias a un costo inigualable.
+                    </p>
+                </div>
+
+            </section>
+
+            </section>
+            <div class="contenedorPagos">
+
+                <h6>Formas de Pago</h6>
+                <div class="payment-method">
+                    <img class="payment-icon" src="../img/visa.png" alt="Tarjeta de Crédito">
+                    Tarjeta de Crédito
+                </div>
+                <div class="payment-method">
+                    <img class="payment-icon" src="../img/paypal.png" alt="PayPal">
+                    PayPal
+                </div>
+                <div class="payment-method">
+                    <img class="payment-icon" src="../img/transferencia-de-dinero.png" alt="Transferencia Bancaria">
+                    Transferencia Bancaria
+                </div>
+            </div>
+            <section class="empresa1">
+                <h5> solicitanos tu pack por aqui</h5>
+                <form action="procesar_formulario.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="mensaje">contanos de que manera queres tu promo </label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+            <p class="textoPromo">Para realizar una compra con nosotros una vez que cargada compra detallanos la
+                direccion el medio de pago y dejanos tu contacto ,para continuar con el tramite y que te puedamos
+                comunicar cuando lo despachemos. tu pedido se despachara dentro de las 24 hs habiles recorda que hacemos
+                envios a todo el pais y que se lo realizan por andreani nada mas .
+                
+            </p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+            <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
