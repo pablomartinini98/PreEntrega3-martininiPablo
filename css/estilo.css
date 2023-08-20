@@ -1,16 +1,18 @@
+*{
+ color: black; 
+}
 /* header */
 header {
-  text-align: center;
+  text-align: right;
   border-style: groove;
-  background-color: #F2D7D5;
+  text-align: right;
   margin: 10px;
-  background-image: url(../img/fondo\ de\ lenceria.jpg);
   background-size: cover;
   height: 50%;
 }
 
 .navbar-nav {
-  text-align: center;
+  text-align: right;
 }
 
 .nav-item {
@@ -48,6 +50,10 @@ header {
 .titulo {
   margin: 30px;
 }
+.carousel-inner img {
+  max-width: 100%;
+  height: 450px;
+}
 
 .rowSection2 {
   display: flex;
@@ -67,6 +73,10 @@ header {
 .card {
   transition: transform 0.3s ease-in-out;
 }
+.card-group {
+  width: 10rem; /* Ajusta este valor según tus preferencias */
+  margin: 10px; /* Espacio entre las tarjetas */
+}
 
 .card:hover {
   transform: scale(1.05);
@@ -75,6 +85,7 @@ header {
 .card-title {
   font-family: Arial, sans-serif;
 }
+
 
 .imagenVisual {
   width: 100%;
@@ -149,10 +160,27 @@ header {
 }
 
 h2 {
-  font-size: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
+.boton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #EDBB99;
+  color: white; /* Cambia el color del texto para que sea legible */
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
 .product-card1 {
   border: 1px solid #ccc;
   padding: 20px;
@@ -234,8 +262,10 @@ h2 {
 }
 
 .contenedorPagos {
+  display: flex;
+  gap: 2rem;
   max-width: 800px;
-  margin: 1rem;
+  margin: 10rem;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -380,8 +410,6 @@ footer a:hover {
   color: #0056b3;
 }
 
-body {
-  background-color: rgb(216, 156, 167);
-}
+
 
 /*# sourceMappingURL=estilo.css.map */

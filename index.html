@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zara fran </title>
+    <meta name="description" content="Sitio web de Zara Fran: Catálogo de moda, promociones, contacto y más.">
+    <meta name="keywords" content="Zara Fran, moda, catálogo, promociones, contacto, empresa, ropa, pijamas">
+    <title>Zara Fran Lenceria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
@@ -41,33 +43,102 @@
     </header>
 
 
-    <main class="container-fluid">
-        <h2>Ingresos</h2>
-        <div class="contenedorIngresos">
-            <img src="img/pijama 1.jpg" class="imagenIngresos" alt="ingreso de pijama ">
-            <img src="img/pijamaarcoiris.jpg" class="imagenIngresos" alt="pijama arcoiris ingreso">
-            <div class="contenedorTexto">
-                <p>Nuevo ingresos de pijama en todos los talles del talle xs al xxxl podes combinarlos con por colores y
-                    talles </p>
-                <button>ver colores</button>
-                <span></span>
-                <button>ver precio </button>
+    <main class="container">
+        
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/fondo 2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/fondo.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/fondo 2.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="row div1">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="../img/colales2.jpg" class="imagendeproducto" alt="Imagen del producto">
+                    <div class="product-details">
+                        <h5 class="product-title">Colales</h5>
+                        <p class="product-description">Talle xs-s-m-l-xl-xxl | Disponibilidad en todos los colores
+                        </p>
+                        <a href="#" class="boton">Ver detalles</a>
+                    </div>
+                </div>
             </div>
 
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="../img/colales3.jpg" class="imagendeproducto" alt="Imagen del producto">
+                    <div class="product-details">
+                        <h5 class="product-title">Colales</h5>
+                        <p class="product-description">Talle xs-s-m-l-xl-xxl | Disponibilidad en todos los colores
+                        </p>
+
+
+                        <a href="#" class="boton">Ver detalles</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./img/conarocamelia.jpg" class="imagendeproducto" alt="Imagen del producto">
+                    <div class="product-details">
+                        <h5 class="product-title">Colales</h5>
+                        <p class="product-description">Talle xs-s-m-l-xl-xxl | Disponibilidad en todos los colores
+                        </p>
+
+
+                        <a href="#" class="boton">Ver detalles</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./img/colalesinvisible.jpg" class="imagendeproducto" alt="Imagen del producto">
+                    <div class="product-details">
+                        <h5 class="product-title">Colales</h5>
+                        <p class="product-description">Talle xs-s-m-l-xl-xxl | Disponibilidad en todos los colores
+                        </p>
+
+
+                        <a href="#" class="boton">Ver detalles</a>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
+    </div>
         <div class="contenedorPagos">
             <h6>Formas de Pago</h6>
             <div class="payment-method">
-                <img class="payment-icon" src="../img/visa.png" alt="Tarjeta de Crédito">
-                Tarjeta de Crédito
+                <img class="payment-icon" src="./img/enviado.png" alt="Tarjeta de Crédito">
+                <p>Envios a todo el pais</p>
             </div>
             <div class="payment-method">
-                <img class="payment-icon" src="../img/paypal.png" alt="PayPal">
-                PayPal
+                <img class="payment-icon" src="./img/tarjeta-de-credito.png" alt="PayPal">
+                <p>Tarjeta de Crédito</p>
             </div>
             <div class="payment-method">
                 <img class="payment-icon" src="../img/transferencia-de-dinero.png" alt="Transferencia Bancaria">
-                Transferencia Bancaria
+               <p>Transferencia Bancaria</p> 
             </div>
         </div>
     </main>
