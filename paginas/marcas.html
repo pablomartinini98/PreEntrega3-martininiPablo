@@ -34,31 +34,59 @@
                         <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
+                        <a class="nav-link" href="../paginas/marcas.html">marcas</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <p class="empresa"> ZARA FRAN este emprendimiento familiar comenzo en un sueño durante la pandemia en el año
+        <h4>Marcas con la que trabajamos </h4>
+        <section class="cuadromarcas">
+            <a href="https://www.instagram.com/soravd/"><img class="marcas" src="../img/marca 1 sora.jpeg"
+                    alt="sora"></a>
+
+            <a href="https://www.instagram.com/malaq.intimates/"><img class="marcas" src="../img/marca 2 malaq.png"
+                alt="malaq"></a>
+
+            <a href="https://www.selu.com.ar/ethereal?_q=ethereal&map=ft"><img class="marcas"
+                    src="../img/marca 3 selu.png" alt="selu"></a>
+
+            <a href="https://www.instagram.com/veronacollection_/?hl=es"><img class="marcas"
+                src="../img/marca 4 verona.jpeg" alt="verona"></a>
+
+            <a
+                href="https://www.calvinklein.ar/mujer/ropa-interior?gclid=CjwKCAjwloynBhBbEiwAGY25dK0oZX9W6uqramyUhkP32-zCEYGDfM8bOzOGgyTP4_LNQn4lVD8B8hoC7PcQAvD_BwE"><img
+                class="marcas" src="../img/marca 5 calvin klein.png" alt="calvin klein"></a>
+
+            <a href="https://florcisbikinis.com.ar/bikinis/"><img class="marcas"
+                src="../img/marca 6 florcis bikinis.png" alt="florcis bikinis"></a>
+
+        </section>
+        <section class="formulario">
+            <h3> SUMATE A NUESTRO EQUIPO </h3>
+
+            <form action="procesar_comentario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="comentario">Datos de tu empresa:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+
+                <input class="boton" type="submit" value="Enviar Comentario">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>NOSOTROS</h3>
+        <p class="empresa"> SARA FRAN este emprendimiento familiar comenzo en un sueño durante la pandemia en el año
             2020, empezo con una magina que no funcionaba muy bien, pero con esfuerzo fue creciendo, empezo con un
             conjunto de plantilla ,continuando por microtul,hasta la confeccion de los conjuntos. todos nuestros
             productos se encuntran en las talles del xs al xxxl o del 85/1 a 120/8
             ES UN Negocio dedicado a la comercialización al por menor de prendas de lencería y corsetería femenina, cuya
             oferta de productos incluye toda clase de ropa interior, además de pijamas, medias, ligas y calcetines,
             accesorios e incluso artículos de baño, como bikinis y bañadores. </p>
-        <form action="procesar_comentario.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
 
-            <label for="comentario">Comentario:</label><br>
-            <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
-
-            <input type="submit" value="Enviar Comentario">
-        </form>
-    </main>
-    <footer>
         <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
         <ul>
             <li><a href="politica-privacidad.html">Política de Privacidad</a></li>

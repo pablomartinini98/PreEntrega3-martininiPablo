@@ -34,49 +34,35 @@
                         <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
+                        <a class="nav-link" href="../paginas/marcas.html">marcas</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>
-        <form class="contact-form">
+    <main class="contacto">
+        <div class="contact-info">
+            <img class="contact-icon" src="../img/email.png" alt=" nuestro email">
+            <label class="contact-label" for="email">sarafranlenceria@gmail.com</label>
+        </div>
 
+        <div class="contact-info">
+            <img class="contact-icon" src="../img/whatsapp.png" alt="nuestro celular ">
+            <label class="contact-label" for="whatsapp">3811234567</label>
+        </div>
 
-            <div class="contact-info">
-                <img class="contact-icon" src="../img/email.png" alt="">
-                <label class="contact-label" for="email">zarafranlenceria@gmail.com</label>
+        <div class="contact-info">
+            <a href="https://www.instagram.com/sarafran_lenceria_tucuman/?igshid=NjIwNzIyMDk2Mg%3D%3D"><img class="contact-icon" src="../img/instagram.png" alt="contacto instagram"></a>
+            <label class="contact-label" for="instagram">sarafranlenceria</label>
+        </div>
 
-
-            </div>
-
-
-            <div class="contact-info">
-
-
-                <img class="contact-icon" src="../img/whatsapp.png" alt="">
-
-
-                <label class="contact-label" for="whatsapp">3811234567</label>
-
-            </div>
-            <div class="contact-info">
-
-
-                <img class="contact-icon" src="../img/instagram.png" alt="">
-
-                <label class="contact-label" for="instagram">zarafranlenceria</label>
-            </div>
-
-            <div class="contact-info">
-                <img class="contact-icon" src="../img/facebook.png" alt="">
-                <label class="contact-label" for="facebook">zarafranlenceria</label>
-            </div>
-        </form>
+        <div class="contact-info">
+            <a href="https://www.facebook.com/Sarafran.lenceria2022?mibextid=b06tZ0"><img class="contact-icon" src="../img/facebook.png" alt="contacto facebook"></a>
+            <label class="contact-label" for="facebook">sarafranlenceria</label>
+        </div>
 
         <section class="formulario">
-            <h5> te podes contactar con nosotros por aqui </h5>
+            <h5>¡Puedes contactarnos por aquí!</h5>
             <form action="procesar_formulario.php" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required><br><br>
@@ -84,14 +70,30 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
 
-                <label for="mensaje">contanos de que manera queres tu promo </label><br>
+                <label for="mensaje">Cuéntanos cómo deseas tu promo:</label><br>
                 <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
 
-                <input type="submit" value="Enviar">
+                <input class="boton" type="submit" value="Enviar">
             </form>
         </section>
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.3885026995993!2d-65.25354473039626!3d-26.79048290139329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d124a8d32fb%3A0xd4102baefac1f21b!2sC.%2041%2090%20Noroeste%204625%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1692664724899!5m2!1ses!2sar"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     <footer>
+        <h3>NOSOTROS</h3>
+        <p class="empresa"> SARA FRAN este emprendimiento familiar comenzo en un sueño durante la pandemia en el año
+            2020, empezo con una magina que no funcionaba muy bien, pero con esfuerzo fue creciendo, empezo con un
+            conjunto de plantilla ,continuando por microtul,hasta la confeccion de los conjuntos. todos nuestros
+            productos se encuntran en las talles del xs al xxxl o del 85/1 a 120/8
+            ES UN Negocio dedicado a la comercialización al por menor de prendas de lencería y corsetería femenina, cuya
+            oferta de productos incluye toda clase de ropa interior, además de pijamas, medias, ligas y calcetines,
+            accesorios e incluso artículos de baño, como bikinis y bañadores. </p>
+
         <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
         <ul>
             <li><a href="politica-privacidad.html">Política de Privacidad</a></li>

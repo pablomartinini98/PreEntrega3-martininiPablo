@@ -34,34 +34,64 @@
                         <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
+                        <a class="nav-link" href="../paginas/marcas.html">marcas</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main class="container-fluid">
-        <div class="row div1">
-            <section class="packModificacion">
-                <h2 class="titulo"> Promociones</h2>
-                <div class="promos">
-                    <h3> Podes armar tus combos a tu gusto! </h3>
+    <main class="container">
+        <section>
+            <article class="packs">
+                <div>
                     <h5> Pack x3</h5>
                     <p>En tus promociones x3 vas a tener la opcion de realizar en corpiños solamente o tangas o
                         vedetinas ya sea el color que elijas y talle que quieras.
                     </p>
+                    <div>
+                        <button class="boton">ver promo</button>
+                        <button class="boton">comprar </button>
+                    </div>
+                </div>
+
+                <img src="../img/pack x3 vedetina.jpg" alt="promocion x3 de vedetinas">
+
+
+            </article>
+            <article class="packs">
+                <img src="../img/pack x6 bikinis.jpg" alt="promocion x6 de bikinis nueva temporada">
+                <div>
                     <h5>Pack x6</h5>
                     <p>El pack x6 lo podes hacer de bikinis nada mas con la opcion de elegir las telas y obviamente los
                         colores que quieras convinar.
                     </p>
+                    <div>
+                        <button class="boton">ver promo</button>
+                        <button class="boton">comprar </button>
+                    </div>
+                </div>
+
+            </article>
+            <article class="packs">
+                <div>
                     <h5>Pack x12</h5>
                     <p>El pack x12 te ofrecemos una oferta imperdible de 12 medias a un costo inigualable.
                     </p>
+                    <div>
+                        <button class="boton">ver promo</button>
+                        <button class="boton">comprar </button>
+                    </div>
                 </div>
+                <img src="../img/pack x12 medias.jpeg" alt="promocion x12 medias largas,cortas y soquetes">
 
-            </section>
+            </article>
 
-            </section>
+        </section>
+
+
+        <div class="row div1">
+
+
             <div class="contenedorPagos">
 
                 <h6>Formas de Pago</h6>
@@ -78,7 +108,7 @@
                     Transferencia Bancaria
                 </div>
             </div>
-            <section class="empresa1">
+            <section class="formulario">
                 <h5> solicitanos tu pack por aqui</h5>
                 <form action="procesar_formulario.php" method="post">
                     <label for="nombre">Nombre:</label>
@@ -90,17 +120,30 @@
                     <label for="mensaje">contanos de que manera queres tu promo </label><br>
                     <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
 
-                    <input type="submit" value="Enviar">
+                    <input class="boton" type="submit" value="Enviar">
                 </form>
             </section>
-            <p class="textoPromo">Para realizar una compra con nosotros una vez que cargada compra detallanos la
-                direccion el medio de pago y dejanos tu contacto ,para continuar con el tramite y que te puedamos
-                comunicar cuando lo despachemos. tu pedido se despachara dentro de las 24 hs habiles recorda que hacemos
-                envios a todo el pais y que se lo realizan por andreani nada mas .
-                
-            </p>
+            <section class="textoPromo">
+                <h3>IMPORTANTE</h3>
+                <p>Para realizar una compra con nosotros una vez que cargada compra detallanos la
+                    direccion el medio de pago y dejanos tu contacto ,para continuar con el tramite y que te puedamos
+                    comunicar cuando lo despachemos. tu pedido se despachara dentro de las 24 hs habiles recorda que
+                    hacemos
+                    envios a todo el pais y que se lo realizan por andreani nada mas .
+
+                </p>
+            </section>
     </main>
     <footer>
+        <h3>NOSOTROS</h3>
+        <p class="empresa"> SARA FRAN este emprendimiento familiar comenzo en un sueño durante la pandemia en el año
+            2020, empezo con una magina que no funcionaba muy bien, pero con esfuerzo fue creciendo, empezo con un
+            conjunto de plantilla ,continuando por microtul,hasta la confeccion de los conjuntos. todos nuestros
+            productos se encuntran en las talles del xs al xxxl o del 85/1 a 120/8
+            ES UN Negocio dedicado a la comercialización al por menor de prendas de lencería y corsetería femenina, cuya
+            oferta de productos incluye toda clase de ropa interior, además de pijamas, medias, ligas y calcetines,
+            accesorios e incluso artículos de baño, como bikinis y bañadores. </p>
+
         <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
         <ul>
             <li><a href="politica-privacidad.html">Política de Privacidad</a></li>

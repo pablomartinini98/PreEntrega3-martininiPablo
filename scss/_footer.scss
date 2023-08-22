@@ -4,6 +4,13 @@
     text-align: center;
 }
 
+@mixin boton {
+    border-bottom: black;
+    border-radius: 2rem;
+    background-color: #EDBB99;
+    bottom: center;
+    font-size: medium;
+}
 
 
 footer {
