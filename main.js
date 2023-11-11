@@ -143,6 +143,5 @@ const jsonDataLocal = {
     "nombre": "Producto desde JSON local",
     "precio": 19.99
 };
-
-carrito.push(jsonDataLocal);
-mostrarCarrito();
+if (carrito.length >0) {
+    mostrarCarrito();}
