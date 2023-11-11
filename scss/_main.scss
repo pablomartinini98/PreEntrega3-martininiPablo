@@ -1,7 +1,3 @@
-/* Variables */
-$colorboton: rgb(54, 54, 231);
-$letraboton: white;
-
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -32,14 +28,14 @@ body {
 /* Estilos de las tarjetas */
 .card {
     transition: transform 0.3s ease-in-out;
-}
 
-.card:hover {
-    transform: scale(1.05);
-}
+    .card:hover {
+        transform: scale(1.05);
+    }
 
-.card-title {
-    font-family: Arial, sans-serif;
+    .card-title {
+        font-family: Arial, sans-serif;
+    }
 }
 
 /* Estilos de imágenes */
@@ -68,30 +64,27 @@ body {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-}
 
-.product-card:hover {
-    transform: scale(1.05);
-}
+    .product-card:hover {
+        transform: scale(1.05);
+    }
 
-.product-title {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
+    .product-title {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
 
-.product-description {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-}
+    .product-description {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
 
+}
 /* Estilos de imágenes de producto */
 .imagendeproducto {
     width: 100%;
     box-shadow: 10px 5px 3px;
 }
-
-/* Otros estilos y reglas de CSS anteriores ... */
-
 /* Contenedor de ingresos */
 .contenedorIngresos {
     width: 50%;
@@ -100,42 +93,30 @@ body {
     padding: 10px;
     background-color: bisque;
 }
-
-/* Imágenes de ingresos */
-.contenedorIngresos .imagenIngresos {
-    width: 30%;
-    margin: 50px;
-}
-
-/* Contenedor de texto en ingresos */
-.contenedorIngresos .contenedorTexto {
-    text-align: left;
-    margin: 15px;
-}
-
 /* Formulario de contacto */
 .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .contact-icon {
+        width: 25px;
+        margin-right: 10px;
+    }
+    
+    .contact-label {
+        font-size: 16px;
+        color: #333;
+    }
+    
 }
 
-.contact-info {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.contact-icon {
-    width: 25px;
-    margin-right: 10px;
-}
-
-.contact-label {
-    font-size: 16px;
-    color: #333;
-}
 
 /* Estilos de la sección de empresa */
 .empresa {
@@ -159,4 +140,14 @@ body {
 /* Margen superior para la sección 3 */
 .rowSection3 {
     margin-top: 100px;
+}
+
+.packs {
+    display: flex;
+    gap: 1rem;
+    margin: 5rem 0rem;
+
+    .titulopacks {
+        font-size: 4.25rem;
+    }
 }

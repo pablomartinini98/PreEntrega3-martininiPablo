@@ -38,13 +38,25 @@
                     </li>
                 </ul>
             </div>
+             <!-- Mueve el carrito al lado derecho -->
+             <div class="container-icon ms-auto">
+                <div class="container-cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="icon-cart">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+                    </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+            </div>
         </nav>
+
     </header>
     <main class="container">
         <section>
             <article class="packs">
                 <div>
-                    <h5> Pack x3</h5>
+                    <h5 class="titulopacks"> Pack x3</h5>
                     <p>En tus promociones x3 vas a tener la opcion de realizar en corpiños solamente o tangas o
                         vedetinas ya sea el color que elijas y talle que quieras.
                     </p>
@@ -55,13 +67,11 @@
                 </div>
 
                 <img src="../img/pack x3 vedetina.jpg" alt="promocion x3 de vedetinas">
-
-
             </article>
             <article class="packs">
                 <img src="../img/pack x6 bikinis.jpg" alt="promocion x6 de bikinis nueva temporada">
                 <div>
-                    <h5>Pack x6</h5>
+                    <h5 class="titulopacks">Pack x6</h5>
                     <p>El pack x6 lo podes hacer de bikinis nada mas con la opcion de elegir las telas y obviamente los
                         colores que quieras convinar.
                     </p>
@@ -70,11 +80,10 @@
                         <button class="boton">comprar </button>
                     </div>
                 </div>
-
             </article>
             <article class="packs">
                 <div>
-                    <h5>Pack x12</h5>
+                    <h5 class="titulopacks">Pack x12</h5>
                     <p>El pack x12 te ofrecemos una oferta imperdible de 12 medias a un costo inigualable.
                     </p>
                     <div>
@@ -83,31 +92,25 @@
                     </div>
                 </div>
                 <img src="../img/pack x12 medias.jpeg" alt="promocion x12 medias largas,cortas y soquetes">
-
             </article>
 
         </section>
-
-
-        <div class="row div1">
-
-
-            <div class="contenedorPagos">
-
+        <section class="row div1">
+            <section class="contenedorenvios">
                 <h6>Formas de Pago</h6>
                 <div class="payment-method">
-                    <img class="payment-icon" src="../img/visa.png" alt="Tarjeta de Crédito">
-                    Tarjeta de Crédito
+                    <img class="payment-icon" src="../img/enviado.png" alt="Tarjeta de Crédito">
+                    <p>Envíos a todo el país</p>
                 </div>
                 <div class="payment-method">
-                    <img class="payment-icon" src="../img/paypal.png" alt="PayPal">
-                    PayPal
+                    <img class="payment-icon" src="../img/tarjeta-de-credito.png" alt="PayPal">
+                    <p>Tarjeta de Crédito</p>
                 </div>
                 <div class="payment-method">
                     <img class="payment-icon" src="../img/transferencia-de-dinero.png" alt="Transferencia Bancaria">
-                    Transferencia Bancaria
+                    <p>Transferencia Bancaria</p>
                 </div>
-            </div>
+            </section>
             <section class="formulario">
                 <h5> solicitanos tu pack por aqui</h5>
                 <form action="procesar_formulario.php" method="post">
@@ -133,6 +136,7 @@
 
                 </p>
             </section>
+        </section>
     </main>
     <footer>
         <h3>NOSOTROS</h3>

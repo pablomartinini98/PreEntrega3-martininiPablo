@@ -12,6 +12,8 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="container-fluid">
@@ -20,6 +22,7 @@
     <header class="navbar navbar-expand-lg sticky-top">
         <nav class="container-fluid">
             <a class="navbar-brand" href="index.html"><img class="logo" src="img/logotipo.png" alt="logotipo"></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,6 +43,10 @@
                     </li>
                 </ul>
             </div>
+            <div id="carrito-container">
+                <!-- Aquí se mostrará el contenido del carrito -->
+            </div>
+            <div id="carrito-icono" class="fas fa-shopping-cart"></div>
         </nav>
     </header>
 
@@ -78,7 +85,9 @@
                         <h5 class="product-title">vedetina rosa</h5>
                         <p class="product-description">Talle xs-s-m-l-xl-xxl | Disponibilidad en todos los colores
                         </p>
-                        <a href="#" class="boton">Ver detalles</a>
+                        <a href="#" class="boton agregar-al-carrito" data-nombre="vedetina rosa"
+                            data-precio="20.00">Agregar al carrito</a>
+
                     </div>
                 </div>
             </div>
@@ -92,7 +101,9 @@
                         </p>
 
 
-                        <a href="#" class="boton">Ver detalles</a>
+                        <a href="#" class="boton agregar-al-carrito" data-nombre="vedetina con lunares"
+                            data-precio="20.00">Agregar al carrito</a>
+
                     </div>
 
                 </div>
@@ -107,7 +118,9 @@
                         </p>
 
 
-                        <a href="#" class="boton">Ver detalles</a>
+                        <a href="#" class="boton agregar-al-carrito" data-nombre="vedetina negra"
+                            data-precio="20.00">Agregar al carrito</a>
+
                     </div>
 
                 </div>
@@ -122,7 +135,9 @@
                         </p>
 
 
-                        <a href="#" class="boton">Ver detalles</a>
+                        <a href="#" class="boton agregar-al-carrito" data-nombre="tanga beige"
+                            data-precio="20.00">Agregar al carrito</a>
+
                     </div>
 
                 </div>
@@ -130,7 +145,8 @@
             </div>
         </div>
 
-        <div class="contenedorenvios">
+
+        <section class="contenedorenvios">
             <h6>Formas de Pago</h6>
             <div class="payment-method">
                 <img class="payment-icon" src="./img/enviado.png" alt="Tarjeta de Crédito">
@@ -144,7 +160,8 @@
                 <img class="payment-icon" src="../img/transferencia-de-dinero.png" alt="Transferencia Bancaria">
                 <p>Transferencia Bancaria</p>
             </div>
-        </div>
+        </section>
+
     </main>
     <footer>
         <h3>NOSOTROS</h3>
@@ -164,8 +181,9 @@
     </footer>
 
 
+    <script src="main.js" defer></script>
 
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
