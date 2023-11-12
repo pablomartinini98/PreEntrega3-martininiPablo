@@ -1,4 +1,14 @@
 
+document.addEventListener('DOMContentLoaded', function() {
+    const miBoton = document.getElementById('miBoton');
+
+    miBoton.addEventListener('click', guardar);
+
+    function guardar() {
+        const nombre = document.getElementById('nombre').value;
+        console.log();
+    }
+});
 const carrito = cargarCarritoDesdeLocalStorage() || [];
 
 document.addEventListener('click', function (event) {
@@ -8,11 +18,27 @@ document.addEventListener('click', function (event) {
         const nombre = event.target.getAttribute('data-nombre');
         const precio = parseFloat(event.target.getAttribute('data-precio'));
 
-        // Añadimos el campo de cuotas
-        const cuotas = parseInt(prompt('Ingrese la cantidad de cuotas'), 10);
+        // Mostrar el formulario flotante
+        document.getElementById('formularioFlotante').style.display = 'block';
 
-        agregarAlCarrito(nombre, precio, cuotas);
-        mostrarCarrito();
+        // Configurar el manejo del formulario
+        const formularioCarrito = document.getElementById('formularioCarrito');
+        formularioCarrito.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Obtener valores del formulario
+            const cantidad = parseInt(document.getElementById('cantidad').value, 10);
+            const cuotas = parseInt(document.getElementById('cuotas').value, 10);
+
+            // Agregar al carrito
+            agregarAlCarrito(nombre, precio, cantidad, cuotas);
+
+            // Ocultar el formulario flotante
+            document.getElementById('formularioFlotante').style.display = 'none';
+
+            // Mostrar el carrito actualizado
+            mostrarCarrito();
+        });
     } else if (event.target.id === 'cerrar-carrito') {
         cerrarCarrito();
     } else if (event.target.id === 'vaciar-carrito') {
@@ -34,7 +60,8 @@ function guardarCarritoEnLocalStorage() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
 
-function agregarAlCarrito(nombre, precio, cuotas) {
+function agregarAlCarrito(nombre, precio, cantidad, cuotas) {
+    document.getElementById('formularioFlotante').style.display = 'block';
     const productoExistente = carrito.find(producto => producto.nombre === nombre);
 
     // Recargo según la tarjeta
@@ -42,11 +69,11 @@ function agregarAlCarrito(nombre, precio, cuotas) {
 
     if (productoExistente) {
         // Si ya está en el carrito, puedes aumentar la cantidad o mostrar un mensaje
-        productoExistente.cantidad += 1;
+        productoExistente.cantidad += cantidad;
         productoExistente.recargo = recargo;
     } else {
         // Si no está en el carrito, agrégalo
-        carrito.push({ nombre, precio, cantidad: 1, recargo });
+        carrito.push({ nombre, precio, cantidad, recargo });
     }
 
     // Guardar en localStorage
@@ -60,10 +87,10 @@ function mostrarCarrito() {
     carrito.forEach((producto, index) => {
         const productoDiv = document.createElement('div');
         productoDiv.textContent = `${producto.nombre} - $${(producto.precio * producto.cantidad).toFixed(2)} (${producto.cantidad}x)`;
-        
+
         // Mostramos el recargo si está definido
         if (producto.recargo !== undefined) {
-            productoDiv.innerHTML += `<br>Recargo: ${producto.recargo.toFixed(2)}`;
+            productoDiv.innerHTML += `<br>Recargo: $${producto.recargo.toFixed(2)}`;
         }
 
         // Botón de eliminar
@@ -118,24 +145,15 @@ function eliminarProducto(index) {
 }
 
 function calcularRecargo(cuotas) {
-    const recargoVisa = 0.05; // 5% de recargo para Visa
-    const recargoMaster = 0.03; // 3% de recargo para Mastercard
-
-    const tipoTarjeta = prompt('Ingrese el tipo de tarjeta (Visa o Mastercard)').toLowerCase();
-
-    if (tipoTarjeta === 'visa') {
-        return cuotas * recargoVisa;
-    } else if (tipoTarjeta === 'mastercard') {
-        return cuotas * recargoMaster;
-    } else {
-        return 0;
-    }
+    // Modifica esta función según tus necesidades específicas
+    const recargoPorCuota = 0.05; // 5% de recargo por cuota
+    return cuotas * recargoPorCuota;
 }
 
 // Ejemplo de carga de datos desde una API externa usando fetch
 fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => nombre = data.userId)
     .catch(error => console.error('Error:', error));
 
 // Ejemplo de carga de datos desde un JSON local
@@ -143,5 +161,6 @@ const jsonDataLocal = {
     "nombre": "Producto desde JSON local",
     "precio": 19.99
 };
-if (carrito.length >0) {
-    mostrarCarrito();}
+if (carrito.length > 0) {
+    mostrarCarrito();
+}

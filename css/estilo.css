@@ -1,6 +1,57 @@
 * {
   color: black;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.formulario-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.formulario-flotante h2 {
+  margin-top: 0;
+}
+
+.formulario-flotante form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-flotante label {
+  margin-bottom: 5px;
+}
+
+.formulario-flotante input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.formulario-flotante button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.formulario-flotante button:hover {
+  background-color: #45a049;
+}
 
 /* header */
 header {
